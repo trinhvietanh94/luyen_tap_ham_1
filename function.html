@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>luyen tap function 1</title>
+  </head>
+  <body>
+    <script>
+      10;
+      // function alertMessage(){
+      //     return ("xin chao")
+      // }
+      // alert(alertMessage())
+
+      // function sum1(a){
+      //     var a=parseInt(prompt("nhap so"))
+      //     return a+1
+      // }
+      // alert(sum1())
+
+      //   function soSanh(a, b) {
+      //     if (a > b) {
+      //       return "a lon hon b";
+      //     } else return a + b;
+      //   }
+      //   alert(soSanh(5,1))
+
+      //   function addNumbers() {
+      //     firstNum = 4;
+      //     secondNum = 8;
+      //     result = firstNum + secondNum;
+      //     return alert(result);
+      //   }
+      //   result = 0;
+      //   result = alert(addNumbers());
+
+      function zodiac() {
+        let a = [
+          "Polaris",
+          "Aldebaran",
+          "Deneb",
+          "Vega",
+          "Altair",
+          "Dubhe",
+          "Regulus",
+        ];
+        let b = [
+          "Ursa Minor",
+          "Tarurus",
+          "Cygnus",
+          "Lyra",
+          "Aquila",
+          "Ursa Major",
+          "Leo",
+        ];
+        let check = true;
+        let c = prompt("nhap a");
+        for (i = 0; i < a.length; i++) {
+          if (c == a[i]) {
+            check = true;
+            return b[i];
+          } else {
+            check = false;
+          }
+        }
+        if (!check) {
+          alert("ko tồn tại");
+        }
+      }
+      alert(zodiac());
+    </script>
+  </body>
+</html>
